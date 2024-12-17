@@ -69,4 +69,8 @@ $$
 
 ## exercice 5
 
-2) **dgbsv** a une complexitée quadratique
+2) **dgbsv** a une complexitée linéaire
+
+## exercice 6
+
+2) Même méthode de validation que pour 4.3

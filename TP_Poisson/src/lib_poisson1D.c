@@ -52,5 +52,6 @@ int indexABCol(int i, int j, int *lab){
 }
 
 int dgbtrftridiag(int *la, int*n, int *kl, int *ku, double *AB, int *lab, int *ipiv, int *info){
+  dgbtrf_(la, la, kl, ku, AB, lab, ipiv, info);
   return *info;
 }
