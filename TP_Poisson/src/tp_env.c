@@ -32,4 +32,12 @@ int main(int argc,char *argv[])
   }
 
   printf("\n\n--------- End -----------\n");
+  int lab = 3;
+  int la  = 10;
+  int kv  = 0;
+
+  double AB[(lab+kv) * la];
+  //set_GB_operator_colMajor_poisson1D(&AB, &lab, &la, &kv);
+  
+
 }
