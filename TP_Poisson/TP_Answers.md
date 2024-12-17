@@ -45,7 +45,14 @@ $$
 7) **dgbsv** résoud un système d'équtions linéaires $\bold{A*X=B}$ avec A sous forme DGB
 
 8) $\bold{r = b - A\hat{x}}$  
- $\bold{||relres|| = {{||b - A\hat{x}||}\over{||A|| ||\hat{x}||}}}$
+   $\bold{||r|| = {{||x - \hat{x}||}\over{||x||}}}$  
+
+    $y = dotprod(x, x)$  
+    $y = sqrt(y)$  
+    $dx = x-\hat{x}$  
+    $z = dotprod(dx, dx)$  
+    $z = sqrt(z)$  
+    $r = y / z$
 
 
 ## exercice 4
@@ -61,3 +68,5 @@ $$
     alors **A\*v = (0, -1, 2, 0)** / **(-1, 2, 0)** selon kv
 
 ## exercice 5
+
+2) **dgbsv** a une complexitée quadratique

@@ -39,6 +39,9 @@ void set_analytical_solution_DBC_1D(double* EX_SOL, double* X, int* la, double* 
 }  
 
 void set_grid_points_1D(double* x, int* la){
+  for (int i = 0; i <= *la; i++) {
+    x[i] = 0;
+  }
 }
 
 double relative_forward_error(double* x, double* y, int* la){

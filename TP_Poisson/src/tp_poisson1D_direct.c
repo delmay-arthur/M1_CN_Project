@@ -91,6 +91,8 @@ int main(int argc,char *argv[])
   /* It can also be solved with dgbsv */
   if (IMPLEM == SV) {
     // TODO : use dgbsv
+    dgbsv_(&la, &kl, &ku, &NRHS, AB, &lab, ipiv, RHS, &la, &info);
+    printf("\n INFO = %d\n",info);
   }
 
   write_GB_operator_colMajor_poisson1D(AB, &lab, &la, "LU.dat");
